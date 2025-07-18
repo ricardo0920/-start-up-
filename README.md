@@ -103,3 +103,5 @@ export PATH=$PATH:$FAKECAR_HOME
   AAR存放地址示例：http://artifactory.intra.xiaojukeji.com/artifactory/libs-release/com/xiaoju/nova/the-one-address/1.1.413/
         因为我们本地开发一般是基于最新的developer或者master新建的分支，所以我们需要在mas平台上找到最新的集成包，根据集成包的版本来设置我们本地依赖的组件版本。
 
+#### 源码依赖配置
+源码依赖有一个前提：依赖工程和被依赖工程的源码在相同目录。在local.properties文件配置源码依赖：将对应配置项置为true,然后sync同步一下即可。
