@@ -91,4 +91,15 @@ export PATH=$PATH:$FAKECAR_HOME
 
 ### charles
 教程不再细赘述，注：配置网络代理和PC端打开Charles可能会导致网络无法用
+
 工具箱：关闭短链转长链
+安装证书（Android手机）
+一般路径：设置->安全->加密与凭据->凭据存储->安装证书（可以直接从设置中搜索“证书”）
+
+### 依赖配置
+         运行之前，我们需对工程的所依赖的组件进行引用版本的更新配置，确保代码正确引用和程序正常运行。不同公司、工程不一，这里不细表。
+如何选择合适的依赖组件版本
+        MAS - 滴滴乘客端 - 安卓：https://mas.intra.xiaojukeji.com/workflow/integrate/22/android?versionId=5537
+  AAR存放地址示例：http://artifactory.intra.xiaojukeji.com/artifactory/libs-release/com/xiaoju/nova/the-one-address/1.1.413/
+        因为我们本地开发一般是基于最新的developer或者master新建的分支，所以我们需要在mas平台上找到最新的集成包，根据集成包的版本来设置我们本地依赖的组件版本。
+
