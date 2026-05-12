@@ -89,6 +89,10 @@ export PATH=$PATH:$FAKECAR_HOME
 
 3.执行 source ~/.bash_profile，然后输入adb version,打印出信息则说明配置成功了
 
+### Jadx
+brew install jadx
+安装完后命令：jadx-gui
+
 ### charles
 教程不再细赘述，注：配置网络代理和PC端打开Charles可能会导致网络无法用
 
