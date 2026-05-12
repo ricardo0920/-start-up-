@@ -54,10 +54,9 @@ gitlab
 brew install --cask iterm2
 2. 安装oh-my-zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-3. 安装自动提示和高亮插件
-# 使用 Gitee 镜像
-git clone https://gitee.com/mirrors/zsh-autosuggestions.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
-git clone https://gitee.com/mirrors/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+3. 安装自动补全和高亮插件
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:=~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:=~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 4. 更改~/.zshrc文件，然后source ~/.zshrc
 plugins=(
   git
@@ -87,6 +86,20 @@ as路径：Preferences | Build, Execution, Deployment | Build Tools | Gradle
 打开你的shell配置文件，如~/.bash_profile，.zprofile，.zshrc，不同shell会有差异，可以在用户根目录通过 ls -a查看对应的profile文件
 使用open命令打开对应的配置文件，将如下配置增加到文件内容里，并保存文件
 ```
+1. ~/.zprofile
+用途：~/.zprofile 是 Zsh shell 的配置文件，主要用于登录 shell 的配置。它在你打开一个新的登录 shell 时执行（如通过终端登录或远程 SSH）。
+常见用途：
+设置环境变量（如 PATH）。
+配置登录时需要运行的命令或脚本。
+可以放置一些需要在登录时执行的命令。
+2. ~/.zshrc
+用途：~/.zshrc 是 Zsh shell 的配置文件，用于配置每次启动新的交互式 shell 时的行为。也就是说，当你打开一个新的终端窗口时，~/.zshrc 会被执行。
+常见用途：
+配置 Zsh 的提示符、别名（alias）、函数等。
+启用插件（例如通过 Oh My Zsh）。
+设置命令历史记录、补全等。
+注意：大多数用于日常操作的设置，比如别名、命令补全、插件等，应该放在 ~/.zshrc 中。
+
 # Java环境变量
 export JAVA_HOME=/Users/didi/Library/Java/JavaVirtualMachines/corretto-17.0.14/Contents/Home
 export PATH=$JAVA_HOME/bin:$PATH
