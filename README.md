@@ -89,7 +89,7 @@ export PATH=$PATH:$FAKECAR_HOME
 
 3.执行 source ~/.bash_profile，然后输入adb version,打印出信息则说明配置成功了
 
-### Jadx
+### Jadx-decompiler工具
 brew install jadx
 安装完后命令：jadx-gui
 
