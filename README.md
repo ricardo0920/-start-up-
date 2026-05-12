@@ -50,7 +50,20 @@ gitlab
 5. 查看本地安装路径，终端语句：'which git'
 
 ### ITerm2 + Oh My Zsh配置for mac
-详细流程向大模型提问吧
+1. 安装iTerm2
+brew install --cask iterm2
+2. 安装oh-my-zsh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+3. 安装自动提示和高亮插件
+# 使用 Gitee 镜像
+git clone https://gitee.com/mirrors/zsh-autosuggestions.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+git clone https://gitee.com/mirrors/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+4. 更改~/.zshrc文件，然后source ~/.zshrc
+plugins=(
+  git
+  zsh-autosuggestions
+  zsh-syntax-highlighting
+)
 
 ### Android studio
 Android Studio下载就比较简单，直接到官网下载安装即可，官网地址：https://developer.android.com/studio
