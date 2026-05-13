@@ -51,11 +51,12 @@ gitlab
 
 ### ITerm2 + Oh My Zsh配置for mac
 1. 安装iTerm2
-brew install --cask iterm2
+brew install --cask iterm2；给iterm2配色参考https://blog.csdn.net/lijunweiyhn/article/details/83988404
 2. 安装oh-my-zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 3. 安装自动补全和高亮插件
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:=~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:=~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 4. 更改~/.zshrc文件，然后source ~/.zshrc
 plugins=(
