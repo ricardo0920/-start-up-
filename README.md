@@ -51,7 +51,7 @@ gitlab
 
 ### ITerm2 + Oh My Zsh配置for mac
 1. 安装iTerm2
-brew install --cask iterm2；给iterm2配色参考https://blog.csdn.net/lijunweiyhn/article/details/83988404
+brew install --cask iterm2；给iterm2配色参考[https://blog.csdn.net/lijunweiyhn/article/details/83988404](https://juejin.cn/post/7064496372648509471)
 2. 安装oh-my-zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 3. 安装自动补全和高亮插件
