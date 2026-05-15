@@ -101,13 +101,27 @@ as路径：Preferences | Build, Execution, Deployment | Build Tools | Gradle
 设置命令历史记录、补全等。
 注意：大多数用于日常操作的设置，比如别名、命令补全、插件等，应该放在 ~/.zshrc 中。
 
+# Android环境变量配置
+export ANDROID_HOME="/Users/didi/Library/Android/sdk"
+
+# 1. 核心命令行工具（sdkmanager, avdmanager 等）
+export PATH="$PATH:$ANDROID_HOME/cmdline-tools/latest/bin"
+
+# 2. 平台工具（adb, fastboot, logcat 等）
+export PATH="$PATH:$ANDROID_HOME/platform-tools"
+
+# 3. 构建工具（aapt, zipalign 等）
+export PATH="$PATH:$ANDROID_HOME/build-tools"
+
+# （可选）模拟器工具
+# export PATH="$PATH:$ANDROID_HOME/emulator"
+
 # Java环境变量
-export JAVA_HOME=/Users/didi/Library/Java/JavaVirtualMachines/corretto-17.0.14/Contents/Home
+export JAVA_HOME=/Users/didi/Library/Java/JavaVirtualMachines/jbr-17.0.14/Contents/Home
 export PATH=$JAVA_HOME/bin:$PATH
 
-# Android环境变量配置
-export ANDROID_HOME="/Users/didi/Library/Android/sdk/platform-tools"
-export PATH=$PATH:$ANDROID_HOME
+# Claude-code环境变量
+export PATH="$HOME/.local/bin:$PATH"
 
 # 自动驾驶fakecar
 export FAKECAR_HOME="/Users/didi/fakecar_Darwin_all_v0.5.8"
