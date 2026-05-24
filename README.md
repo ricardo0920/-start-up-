@@ -30,8 +30,9 @@ gitlab
          安装过程中会要求我们输入电脑登陆密码和选择国内下载源，根据自己需求填写即可。
          注：安装过程会有cask和core工具的下载选择，记得选择。
 输入'brew -v'可查看是否安装成功
-  初步介绍几个brew命令
-查看版本：brew -v  更新brew版本：brew update
+初步介绍几个brew命令
+查看版本：brew -v  
+更新brew版本：brew update
 查找：brew search python（其中python替换为要查找的关键字）
 安装：brew install python（其中python替换为要安装的名称）
 本地软件库列表：brew ls
@@ -56,10 +57,13 @@ gitlab
 
 ### ITerm2 + Oh My Zsh配置for mac
 1. 安装iTerm2
+
 brew install --cask iterm2；给iterm2配色参考[https://blog.csdn.net/lijunweiyhn/article/details/83988404](https://juejin.cn/post/7064496372648509471)
 2. 安装oh-my-zsh
+
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 3. 安装自动补全和高亮插件
+
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:=~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:=~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
